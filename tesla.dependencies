@@ -1,0 +1,23 @@
+[
+    {
+        "repository": "Haxynox/device_samsung_smdk4412-common",
+        "target_path": "device/samsung/smdk4412-common",
+        "branch": "Mmm"
+    },
+    {
+        "repository": "Alectradar/kernel_samsung_smdk4412",
+        "target_path": "kernel/samsung/smdk4412",
+        "branch": "mm6.0"
+    },
+    {
+        "repository": "Alectradar/android_hardware_samsung",
+        "target_path": "hardware/samsung",
+        "branch": "mm6.0"
+    },
+    {
+        "repository": "Haxynox/proprietary_vendor_samsung",
+        "target_path": "vendor/samsung",
+        "branch": "Mmm"
+    }
+]
+
