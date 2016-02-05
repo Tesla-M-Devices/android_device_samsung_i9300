@@ -15,6 +15,11 @@
         "branch": "mm6.0"
     },
     {
+        "repository": "Haxynox/android_external_stlport",
+        "target_path": "external/stlport",
+        "branch": "Mmm"
+    },
+    {
         "repository": "Haxynox/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
         "branch": "Mmm"
