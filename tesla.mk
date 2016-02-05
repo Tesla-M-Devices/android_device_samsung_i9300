@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright 2013 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, device/samsung/i9300/full_i9300.mk)
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/tesla.mk \
-    $(LOCAL_DIR)/full_i9300.mk
+
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from our omni product configuration
+$(call inherit-product, vendor/tesla/config/common.mk)
+
+PRODUCT_NAME := tesla_i9300
+
+PRODUCT_PACKAGES += \
+    Launcher3
+
